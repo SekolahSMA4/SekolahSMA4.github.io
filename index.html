@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Fons Sapientiae</title>
+  <style>
+ #myDIV {
+  background-image: url('https://i.pinimg.com/564x/d9/ad/46/d9ad4684079bb0488b7c95e0e14136b3.jpg');
+  background-position: top left;
+  animation: mymove 45s infinite;
+}
+@keyframes mymove {
+  50% {background-position: center;}
+}
+.strokeme {
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 12x 0 #000;
+}
+  </style>
+</head>
+<body align="center" id="myDIV">
+  <font color="white">
+    <h1 class="strokeme">...</h1>
+   <p align = "center">
+    <input type="text" id="userInput" placeholder="sigmzzz">
+    <button onclick="checkInput()">enter</button>
+   </p>
+  </font>
+</body>
+       <script> 
+        function checkInput() { 
+            const inputField = document.getElementById('userInput'); 
+            const correctWord = 'sejarah';
+            const userInput = inputField.value; 
+ 
+            if (userInput === correctWord) { 
+                // Redirect to the desired URL 
+                window.location.href = 'JongSumateranBond.html'; // Change to your target URL 
+            } else { 
+                alert('get rekt bozo');  // Set the correct word here 
+            } 
+        } 
+   </script>
+</html>
